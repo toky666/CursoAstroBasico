@@ -1,0 +1,26 @@
+---
+const name = "tokydev";
+console.log(name);
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body>
+		<h1>{name}</h1>
+	</body>
+</html>
+
+<style is:global>
+	h1{
+		color: rebeccapurple;
+		font-size: 2rem;
+		font-weight: 700;
+		font-family: monospace;
+	}
+</style>
