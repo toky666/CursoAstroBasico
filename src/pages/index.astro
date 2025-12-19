@@ -1,11 +1,12 @@
 ---
+import Title from "../components/atoms/Title.astro";
 import Layout from "../layout/Layout.astro";
 ---
 
 <h1>Yoky Blog</h1>
 
 <Layout title="Home" description="Bienvenidos mi blog">
-  <h1 class="text-blue-600 divide-amber-700">miau</h1>
-  <h2 slot="footer">Esto dentro de footer</h2>
+  <main class="flex flex.col w-full justify-center items-center h-screen">
+    <Title as="h1" class="text-center text-red-500">Hola mundo</Title>
+  </main>
 </Layout>
-
