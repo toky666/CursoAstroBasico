@@ -1,6 +1,10 @@
 ---
+import Image from "astro/components/Image.astro";
 import Title from "../components/atoms/Title.astro";
 import Layout from "../layout/Layout.astro";
+import portada from "../../src/assets/Princess-Peach-PNG-Transparent-Image.png";
+import AstroIcon from "../assets/astro.svg";
+import AstroIcon2 from "../assets/astro2.astro";
 ---
 
 <h1>Yoky Blog</h1>
@@ -8,5 +12,10 @@ import Layout from "../layout/Layout.astro";
 <Layout title="Home" description="Bienvenidos mi blog">
   <main class="flex flex.col w-full justify-center items-center h-screen">
     <Title as="h1" class="text-center text-red-500">Hola mundo</Title>
+    <AstroIcon width="100" height="100" />
+    <AstroIcon2 class="hover:scale-90" fill="red" width="100" height="100"/>
+
+<!--     <img src="/public/images/Princess-Peach-PNG-Transparent-Image.png" alt="Portada">
+    <Image src={portada} alt="Portada optimizada"/> -->
   </main>
 </Layout>
